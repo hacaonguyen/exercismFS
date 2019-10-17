@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Util.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\binary-search-tree\BinarySearchTree.fsproj" />
+    <ProjectReference Include="..\phone-number\PhoneNumber.fsproj" />
+    <ProjectReference Include="..\robot-name\RobotName.fsproj" />
+    <ProjectReference Include="..\tree-building\TreeBuilding.fsproj" />
+    <ProjectReference Include="..\two-fer\TwoFer.fsproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ReverseString">
+      <HintPath>..\reverse-string\bin\Debug\netcoreapp2.1\ReverseString.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

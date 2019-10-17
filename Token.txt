@@ -1,0 +1,4 @@
+2c425568-cddc-4d6c-817f-5646929a7ef
+Token:         (-t, --token)      2c425568-cddc-4d6c-817f-5646929a7efc
+Workspace:     (-w, --workspace)  C:\Users\nguyenhc\Exercism
+API Base URL:  (-a, --api)        https://api.exercism.io/v1
