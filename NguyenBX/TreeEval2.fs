@@ -32,6 +32,6 @@ let rec evalBoolExpTree (tree: BoolExpTree): bool =
             //| OrTree -> x || (evalTreeList tail OrTree) 
     match tree with
     | Leaf x -> x
-    | NotBranch tree -> evalBoolExpTree tree
+    | NotBranch tree -> not (evalBoolExpTree tree)
     | AndBranch trees -> evalTreeList trees AndTree
     | OrBranch trees -> evalTreeList trees OrTree
