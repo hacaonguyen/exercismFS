@@ -26,7 +26,7 @@ let rec evalBoolExpTree (tree: BoolExpTree): bool =
             | AndTree, false -> false
             | AndTree, _ -> x && (evalTreeList tail AndTree)
             | OrTree, true -> true
-            | OrTree, _ -> x && (evalTreeList tail OrTree)
+            | OrTree, _ -> x || (evalTreeList tail OrTree)
             //match treeType with
             //| AndTree -> x && (evalTreeList tail AndTree)
             //| OrTree -> x || (evalTreeList tail OrTree) 
