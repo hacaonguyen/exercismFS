@@ -31,7 +31,9 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Raindrops", "raindrops\Rain
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Grains", "grains\Grains.fsproj", "{51966F75-0943-4461-97DA-DA457E5E9514}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NguyenBX", "NguyenBX\NguyenBX.fsproj", "{FF852732-17AC-4965-9045-C185F329538F}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "NguyenBX", "NguyenBX\NguyenBX.fsproj", "{FF852732-17AC-4965-9045-C185F329538F}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Accumulate", "accumulate\Accumulate.fsproj", "{7152A813-1B66-4D97-BD2C-0C2ACD999439}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{FF852732-17AC-4965-9045-C185F329538F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF852732-17AC-4965-9045-C185F329538F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF852732-17AC-4965-9045-C185F329538F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7152A813-1B66-4D97-BD2C-0C2ACD999439}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7152A813-1B66-4D97-BD2C-0C2ACD999439}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7152A813-1B66-4D97-BD2C-0C2ACD999439}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7152A813-1B66-4D97-BD2C-0C2ACD999439}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,4 @@
-﻿// Learn more about F# at http://fsharp.org
-open Util
+﻿module Fold
 
 // FoldBack : ('a -> 'b -> 'b) -> list<'a> -> 'b -> 'b
 let rec FoldBack (func: 'a -> 'b -> 'b) (input: 'a list) (acc: 'b): 'b =
@@ -7,7 +6,7 @@ let rec FoldBack (func: 'a -> 'b -> 'b) (input: 'a list) (acc: 'b): 'b =
     | [] -> acc
     | head :: tail -> func head (FoldBack func tail acc) 
 
-let rec FoldBack1 (func: 'a -> 'b -> 'b) (input: 'a list) facc =
+let rec FoldBack1 (func: 'a -> 'b -> 'b) (input: 'a list) (facc: 'b -> 'b): ('b -> 'b) =
     match input with
     | [] -> facc
     | head :: tail -> 
@@ -27,5 +26,4 @@ let rec Fold (func: 'a -> 'b -> 'a) (acc: 'a) (input: 'b list): 'a =
     | head :: tail -> 
         let acc' = func acc head
         Fold func acc' tail
-    
 

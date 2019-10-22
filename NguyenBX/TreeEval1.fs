@@ -17,7 +17,7 @@ type Tree =
 
 let rec eval (t:Tree): bool = 
     match t with
-    | Node (x) -> x
+    | Node x -> x
     | Node1 (NOT, t) -> not (eval t) 
     | Node2 (t1, AND, t2) -> (eval t1) && (eval t2)
     | Node2 (t1, OR, t2) -> (eval t1) || (eval t2)
