@@ -1,31 +1,15 @@
 ﻿// Learn more about F# at http://fsharp.org
 open Util
 
-// FoldBack : ('a -> 'b -> 'b) -> list<'a> -> 'b -> 'b
-let rec FoldBack (func: 'a -> 'b -> 'b) (input: 'a list) (acc: 'b): 'b =
-    match input with
-    | [] -> acc
-    | head :: tail -> func head (FoldBack func tail acc) 
+let countValues list value =
+    let rec checkList list acc =
+       match list with
+       | head :: tail when head = value -> checkList tail (acc + 1)
+       | _ :: tail -> checkList tail acc
+       | [] -> acc
+    checkList list 0
 
-let rec FoldBack1 (func: 'a -> 'b -> 'b) (input: 'a list) facc =
-    match input with
-    | [] -> facc
-    | head :: tail -> 
-        let facc' = facc << func head
-        FoldBack1 func tail facc' 
+//let result = countValues [ for x in -10..10 -> x*x - 4 ] 0
+let result = countValues [1; 2; 3; 4; 3; 5] 0
 
-
-printfn "%d" (FoldBack1 (fun e acc -> e+acc) [1; 2; 3; 4] id 0) // sum: 10
-printfn "%d" (FoldBack1 (fun _ acc -> 1+acc) [1; 2; 3; 4] id 0) // length: 4
-printfn "%A" (FoldBack1 (fun e acc -> e::acc) [1; 2; 3; 4] id []) // reverse: [4; 3; 2; 1]
-
-// Fold : ('a -> 'b -> 'a) -> 'a -> list<'b> -> 'a
-let rec Fold (func: 'a -> 'b -> 'a) (acc: 'a) (input: 'b list): 'a =
-    printfn "%A-%A" acc input
-    match input with
-    | [] -> acc
-    | head :: tail -> 
-        let acc' = func acc head
-        Fold func acc' tail
-    
-
+printfn "%d" result
