@@ -7,9 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="File1.fs" />
-    <Compile Include="CollatzConjecture.fs" />
-    <Compile Include="CollatzConjectureTest.fs" />
+    <Compile Include="Strain.fs" />
+    <Compile Include="StrainTest.fs" />
   </ItemGroup>
 
   <ItemGroup>

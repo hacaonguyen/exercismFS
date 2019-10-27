@@ -1,6 +1,4 @@
 ﻿module RomanNumerals
-//let r1, r5, r10, r50, r100, r500, r1000 = "I", "V", "X", "L", "C", "D", "M"
-//Tool to convert: https://tienichnho.com/chuyen-doi-so-la-ma
 
 //repeat a string n times
 //3 "I" -> "III"

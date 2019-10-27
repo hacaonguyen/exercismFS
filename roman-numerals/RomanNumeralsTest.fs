@@ -1,4 +1,6 @@
 // This file was auto-generated based on version 1.2.0 of the canonical data.
+//let r1, r5, r10, r50, r100, r500, r1000 = "I", "V", "X", "L", "C", "D", "M"
+//Tool to convert: https://tienichnho.com/chuyen-doi-so-la-ma
 
 module RomanNumeralsTest
 

@@ -1,15 +1,15 @@
 ﻿// Learn more about F# at http://fsharp.org
 open Util
 
-let countValues list value =
-    let rec checkList list acc =
-       match list with
-       | head :: tail when head = value -> checkList tail (acc + 1)
-       | _ :: tail -> checkList tail acc
-       | [] -> acc
-    checkList list 0
+let steps (number: int): int = 
+    if 
+        number <= 0 then 0
+    else
+        let mutable loop = 0
+        let mutable n = number
+        while n <> 1 do
+            loop <- loop + 1
+            if (n % 2 = 0) then n <- n/2 else n <- 3*n + 1
+        loop
 
-//let result = countValues [ for x in -10..10 -> x*x - 4 ] 0
-let result = countValues [1; 2; 3; 4; 3; 5] 0
-
-printfn "%d" result
+for i in [1..1000] do printf ("%d, ") (steps i) 
