@@ -41,8 +41,6 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CollatzConjecture", "collat
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RomanNumerals", "roman-numerals\RomanNumerals.fsproj", "{AB8AC33A-84DB-431D-A7FF-6D1ADDC0C1FC}"
 EndProject
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Zipper", "zipper\Zipper.fsproj", "{EBC45A33-3114-43CF-9B69-AF2232CD32F3}"
-EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Darts", "darts\Darts.fsproj", "{993D02C1-8F52-4571-AB38-E453FD77D10D}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HighScores", "high-scores\HighScores.fsproj", "{E6FBF837-BB54-49CF-BF57-1646A6D8B04B}"
@@ -52,6 +50,10 @@ EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Sieve", "sieve\Sieve.fsproj", "{3FC02DC7-B1B4-46A0-906D-29B0959B5697}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "LargestSeriesProduct", "largest-series-product\LargestSeriesProduct.fsproj", "{75CB3016-86E4-426E-8229-9A164B54157E}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pov", "pov\Pov.fsproj", "{7B430922-E450-4185-89CE-7244727E0D1D}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PascalsTriangle", "pascals-triangle\PascalsTriangle.fsproj", "{EB085A0C-2C6D-41CB-9007-44329130C5CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,10 +137,6 @@ Global
 		{AB8AC33A-84DB-431D-A7FF-6D1ADDC0C1FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB8AC33A-84DB-431D-A7FF-6D1ADDC0C1FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB8AC33A-84DB-431D-A7FF-6D1ADDC0C1FC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EBC45A33-3114-43CF-9B69-AF2232CD32F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EBC45A33-3114-43CF-9B69-AF2232CD32F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EBC45A33-3114-43CF-9B69-AF2232CD32F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EBC45A33-3114-43CF-9B69-AF2232CD32F3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{993D02C1-8F52-4571-AB38-E453FD77D10D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{993D02C1-8F52-4571-AB38-E453FD77D10D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{993D02C1-8F52-4571-AB38-E453FD77D10D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -159,6 +157,14 @@ Global
 		{75CB3016-86E4-426E-8229-9A164B54157E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75CB3016-86E4-426E-8229-9A164B54157E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75CB3016-86E4-426E-8229-9A164B54157E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B430922-E450-4185-89CE-7244727E0D1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B430922-E450-4185-89CE-7244727E0D1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B430922-E450-4185-89CE-7244727E0D1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B430922-E450-4185-89CE-7244727E0D1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

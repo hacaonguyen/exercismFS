@@ -1,15 +1,12 @@
 ﻿// Learn more about F# at http://fsharp.org
 open Util
 
-let steps (number: int): int = 
-    if 
-        number <= 0 then 0
-    else
-        let mutable loop = 0
-        let mutable n = number
-        while n <> 1 do
-            loop <- loop + 1
-            if (n % 2 = 0) then n <- n/2 else n <- 3*n + 1
-        loop
+let nextList (xs: int list): int list =
+    let ys = 0 :: xs @ [0]
+    [ for i = 1 to ys.Length - 1 do yield (ys.[i-1] + ys.[i]) ]  
 
-for i in [1..1000] do printf ("%d, ") (steps i) 
+let rows numberOfRows : int list list = 
+    match numberOfRows with
+    | 1 -> [[1]]
+    | n -> [[1]; [1;1]] 
+
