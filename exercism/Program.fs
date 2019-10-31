@@ -1,12 +1,17 @@
 ﻿// Learn more about F# at http://fsharp.org
 open Util
 
-let nextList (xs: int list): int list =
-    let ys = 0 :: xs @ [0]
-    [ for i = 1 to ys.Length - 1 do yield (ys.[i-1] + ys.[i]) ]  
+let append xs ys =
+    let f x y = x :: y
+    let rec appendAcc acc = function
+        | [] -> acc
+        | head :: tail -> appendAcc (acc << f head) tail
+    appendAcc id xs ys        
 
-let rows numberOfRows : int list list = 
-    match numberOfRows with
-    | 1 -> [[1]]
-    | n -> [[1]; [1;1]] 
+let x: int list = append [] []
+
+Out1 "" x
+
+Out1 "" (append [] [])
+
 

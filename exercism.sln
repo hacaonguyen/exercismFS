@@ -55,6 +55,8 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Pov", "pov\Pov.fsproj", "{7
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PascalsTriangle", "pascals-triangle\PascalsTriangle.fsproj", "{EB085A0C-2C6D-41CB-9007-44329130C5CE}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ListOps", "list-ops\ListOps.fsproj", "{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -165,6 +167,10 @@ Global
 		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB085A0C-2C6D-41CB-9007-44329130C5CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

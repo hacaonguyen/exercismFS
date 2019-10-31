@@ -26,7 +26,6 @@ printfn "%A" (FoldBack1 (fun e acc -> e::acc) [1; 2; 3; 4] id []) // reverse: [4
 
 // Fold : ('a -> 'b -> 'a) -> 'a -> list<'b> -> 'a
 let rec Fold (func: 'a -> 'b -> 'a) (acc: 'a) (input: 'b list): 'a =
-    printfn "%A-%A" acc input
     match input with
     | [] -> acc
     | head :: tail -> 
