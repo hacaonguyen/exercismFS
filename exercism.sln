@@ -57,6 +57,10 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "PascalsTriangle", "pascals-
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ListOps", "list-ops\ListOps.fsproj", "{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "CustomSet", "custom-set\CustomSet.fsproj", "{3CFEEC16-DA9A-4CEB-9CF1-19DE4CAC7B5F}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "GradeSchool", "grade-school\GradeSchool.fsproj", "{DDBF33D7-EE61-4BD7-BCE9-E893DD5CAFF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -171,6 +175,14 @@ Global
 		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDCCCDE0-A0C0-4DC6-BBC4-A9B1E69BE499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFEEC16-DA9A-4CEB-9CF1-19DE4CAC7B5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFEEC16-DA9A-4CEB-9CF1-19DE4CAC7B5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFEEC16-DA9A-4CEB-9CF1-19DE4CAC7B5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFEEC16-DA9A-4CEB-9CF1-19DE4CAC7B5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDBF33D7-EE61-4BD7-BCE9-E893DD5CAFF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBF33D7-EE61-4BD7-BCE9-E893DD5CAFF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBF33D7-EE61-4BD7-BCE9-E893DD5CAFF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBF33D7-EE61-4BD7-BCE9-E893DD5CAFF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
