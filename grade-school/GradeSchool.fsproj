@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="File1.fs" />
     <Compile Include="GradeSchool.fs" />
     <Compile Include="GradeSchoolTest.fs" />
   </ItemGroup>
