@@ -340,3 +340,5 @@ ASALocalRun/
 # BeatPulse healthcheck temp database
 healthchecksdb
 grade-school/File1.fs
+exercism/File1.fs
+grep/File1.fs
