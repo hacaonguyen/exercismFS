@@ -1,29 +1,100 @@
 ﻿module CustomSet
 
 // TODO: define the Set type
+type 'a MySet =
+    | Empty
+    | Set of 'a * 'a MySet
 
-let empty = failwith "You need to implement this function."
+let empty = Empty
 
-let singleton value = failwith "You need to implement this function."
+let singleton value = Set (value, Empty)
 
-let isEmpty set = failwith "You need to implement this function."
+let isEmpty set = 
+    match set with 
+    | Empty -> true
+    | _ -> false
 
-let size set = failwith "You need to implement this function."
+let size set = 
+    let rec sizeAcc acc = function 
+        | Empty -> acc
+        | Set (x, s) -> sizeAcc (acc + 1) s
+    sizeAcc 0 set
 
-let fromList list = failwith "You need to implement this function."
+// check if set contains value
+let rec contains value set = 
+    match set with 
+    | Empty -> false
+    | Set (x, s) ->
+        match x = value with
+        | true -> true
+        | false -> contains value s 
 
-let toList set = failwith "You need to implement this function."
+let isIn set value = contains value set
 
-let contains value set = failwith "You need to implement this function."
+let rec isSubsetOf left right = 
+    match left with 
+    | Empty -> true
+    | Set (x, s) -> 
+        match right |> contains x with
+        | false -> false
+        | true -> isSubsetOf s right 
 
-let insert value set = failwith "You need to implement this function."
+let isEqualTo set1 set2 = 
+    (isSubsetOf set1 set2) && (isSubsetOf set2 set1)  
 
-let union left right = failwith "You need to implement this function."
+let insert value set = 
+    match set |> contains value with
+    | true -> set
+    | false -> Set (value, set) 
 
-let intersection left right = failwith "You need to implement this function."
+let rec union left right = 
+    match left with
+    | Empty -> right
+    | Set (x, s) -> 
+        let right' = insert x right
+        union s right'
 
-let difference left right = failwith "You need to implement this function."
+let intersection left right = 
+    
+    let rec intersectionAcc acc left right =
+        match left with
+        | Empty -> acc
+        | Set (x, s) -> 
+            let acc' = 
+                match right |> contains x with 
+                | true -> insert x acc 
+                | false -> acc
+            intersectionAcc acc' s right
+    
+    intersectionAcc Empty left right
+    
+// return items in left but not in right
+let difference left right = 
 
-let isSubsetOf left right = failwith "You need to implement this function."
+    let rec diffAcc acc left right =
+        match left with
+        | Empty -> acc
+        | Set (x, s) -> 
+            let acc' = 
+                match right |> contains x with 
+                | false -> insert x acc 
+                | true -> acc
+            diffAcc acc' s right
 
-let isDisjointFrom left right = failwith "You need to implement this function."
+    diffAcc Empty left right
+
+let isDisjointFrom left right = 
+    left |> intersection right |> isEmpty  
+
+let fromList list = 
+    list |> List.fold (fun acc item -> insert item acc) Empty
+
+let toList set = 
+    let cont x xs = x :: xs 
+    let rec toListAcc fAcc set =    
+        match set with
+        | Empty -> fAcc []
+        | Set (x, s) -> toListAcc (fAcc >> cont x) s
+    toListAcc id set
+
+ 
