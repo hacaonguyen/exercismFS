@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="TreeZipper_CE.fs" />
     <Compile Include="CE.fs" />
     <Compile Include="File1.fs" />
     <Compile Include="Fold.fs" />

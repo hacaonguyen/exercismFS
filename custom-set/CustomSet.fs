@@ -97,4 +97,39 @@ let toList set =
         | Set (x, s) -> toListAcc (fAcc >> cont x) s
     toListAcc id set
 
- 
+let rec collect f set =
+    match set with
+    | Empty -> Empty
+    | Set (x, s) -> union (f x) (collect f s)
+
+type SetBuilder() =
+    member this.Bind(set, f) = collect f set 
+    member this.Yield(item) = singleton item
+    member this.YieldFrom(set) = set
+    member this.Return(item) = singleton item
+    member this.ReturnForm(set) = set   
+    member this.Zero() = Empty
+    member this.For(set, f) = this.Bind(set, f)
+    member this.For(list, f) = this.Bind(list |> fromList, f)
+    member this.Combine(set1, set2) = union set1 set2
+    member this.Delay(f) = f()
+
+let Set = new SetBuilder()
+
+let s = [1; 2; 3] |> fromList
+let x = Set {1; 2; 3} |> toList
+let y =
+    Set {
+        yield! s
+        yield 4
+        yield 5
+        yield! [10..11] |> fromList
+        for i in [7..9] |> fromList do yield i
+        }
+let z =
+    Set {
+        let! x = fromList [1; 2; 3]
+        let! y = fromList [10; 20; 30]
+        return x + y
+        }
+    |> toList |> List.sort

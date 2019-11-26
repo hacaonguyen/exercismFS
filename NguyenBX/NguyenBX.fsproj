@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="TreeEval3.fs" />
     <Compile Include="TreeTailRec2.fs" />
     <Compile Include="TreeTailRec1.fs" />
     <Compile Include="TreeEval1.fs" />
