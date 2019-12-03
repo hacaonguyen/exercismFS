@@ -73,6 +73,10 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Zipper", "zipper\Zipper.fsp
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "ArmstrongNumbers", "armstrong-numbers\ArmstrongNumbers.fsproj", "{388DCF37-FB6B-4938-B441-981A297DE16F}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BeerSong", "beer-song\BeerSong.fsproj", "{C8D632DE-EC01-4858-AAA2-2AFCFC8AD128}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RationalNumbers", "rational-numbers\RationalNumbers.fsproj", "{FB08DB4B-1589-40C6-BBA0-67543F71246D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -219,6 +223,14 @@ Global
 		{388DCF37-FB6B-4938-B441-981A297DE16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{388DCF37-FB6B-4938-B441-981A297DE16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{388DCF37-FB6B-4938-B441-981A297DE16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D632DE-EC01-4858-AAA2-2AFCFC8AD128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D632DE-EC01-4858-AAA2-2AFCFC8AD128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D632DE-EC01-4858-AAA2-2AFCFC8AD128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D632DE-EC01-4858-AAA2-2AFCFC8AD128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB08DB4B-1589-40C6-BBA0-67543F71246D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB08DB4B-1589-40C6-BBA0-67543F71246D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB08DB4B-1589-40C6-BBA0-67543F71246D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB08DB4B-1589-40C6-BBA0-67543F71246D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
