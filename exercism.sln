@@ -83,6 +83,12 @@ Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "AffineCipher", "affine-ciph
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "RobotSimulator", "robot-simulator\RobotSimulator.fsproj", "{7B007929-68D9-4C77-96E4-220C7767E895}"
 EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Allergies", "allergies\Allergies.fsproj", "{3B51D2B0-1E56-42BF-943A-DF450903861E}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "OcrNumbers", "ocr-numbers\OcrNumbers.fsproj", "{0337416E-4EDC-4836-ABEA-7143E2456FDD}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "NucleotideCount", "nucleotide-count\NucleotideCount.fsproj", "{E1507F60-5316-4FA4-AF7B-113709D90DBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -249,6 +255,18 @@ Global
 		{7B007929-68D9-4C77-96E4-220C7767E895}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B007929-68D9-4C77-96E4-220C7767E895}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B007929-68D9-4C77-96E4-220C7767E895}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B51D2B0-1E56-42BF-943A-DF450903861E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B51D2B0-1E56-42BF-943A-DF450903861E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B51D2B0-1E56-42BF-943A-DF450903861E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B51D2B0-1E56-42BF-943A-DF450903861E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0337416E-4EDC-4836-ABEA-7143E2456FDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0337416E-4EDC-4836-ABEA-7143E2456FDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0337416E-4EDC-4836-ABEA-7143E2456FDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0337416E-4EDC-4836-ABEA-7143E2456FDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1507F60-5316-4FA4-AF7B-113709D90DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1507F60-5316-4FA4-AF7B-113709D90DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1507F60-5316-4FA4-AF7B-113709D90DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1507F60-5316-4FA4-AF7B-113709D90DBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
